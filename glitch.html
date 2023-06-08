@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      padding-top: 0.375rem;
+      padding-bottom: 0.375rem;
+    }
+    .navbar-brand img {
+      height: 30px;
+      margin-right: 10px;
+    }
+    .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-nav .nav-link i {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="k.png" alt="Logo">
+    <span class="text-white">Frond End Solutions</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> About</a><section id="about">
+          <section id="about">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img src="profile_picture.jpg" alt="Profile Picture" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                  <h2>About Me</h2>
+                  <p>I am a passionate and dedicated web developer with experience in building responsive and user-friendly websites. My expertise includes HTML, CSS, JavaScript, and various web development frameworks. I strive to create clean and efficient code to deliver high-quality solutions.</p>
+                  <p>Throughout my career, I have worked on numerous projects, collaborating with cross-functional teams to achieve project goals. I have a strong attention to detail and a commitment to staying updated with the latest web development trends and technologies.</p>
+                  <p>When I'm not coding, I enjoy exploring new technologies, reading tech blogs, and engaging in creative problem-solving. I am constantly seeking opportunities to learn and grow as a developer.</p>
+                  <a href="#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <script>
+            $(document).ready(function() {
+              $('#about').hide(); // Hide the about section by default
+
+              $('#about-btn').click(function() {
+                $('#about').slideToggle(); // Toggle the visibility of the about section
+              });
+            });
+          </script>
+
+          <button id="about-btn" class="btn btn-primary">About</button>
+
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</body>
+</html>
